@@ -13,13 +13,15 @@ package Main;
 @author axelcarcamo
 */
 
-import java.util.Scanner ;
-public class EJ_02_CF {
+
+import java.util.Scanner;
+
+public class EJ_03_W {
 	public static void main(String[] args) {
 		Scanner tD=new Scanner(System.in);
 		
-		int rL=0;
-		int ent=0;
+		// Declaracion de variables
+		String vocal="";
 		
 		/* Banner correspondiente a la univerisidad */
 		System.out.println(" ===========================================================================================");
@@ -40,26 +42,18 @@ public class EJ_02_CF {
 		System.out.println(" ===========================================================================================");
 		System.out.println(" ===========================================================================================");
 		System.out.println(" ");
-		System.out.println("                       Ejercicios de clase estructura repetitiva For                        ");
+		System.out.println("                       Ejercicios de clase estructura repetitiva While                      ");
 		System.out.println(" ===========================================================================================");
 		System.out.println(" ===========================================================================================");
 		System.out.println("     Bienvenido a continuancion se le brindaran unas instrucciones para llevar acabbo el    ");
 		System.out.println("                                         Ejercicio                                          ");
 		System.out.println(" ===========================================================================================");
-		System.out.println("    Ingrese un numero entero del cual usted desea obtener su tabla de multiplicacion         ");
-		System.out.println("    Este siendo del 1 al 12: "); ent = tD.nextInt();
-		
-			if (ent<=15) {
-				for (int i = 1; i < 13; i++) {
-				rL = i * ent;
-				System.out.println(" | " + ent + " X " + i + " = " + rL + " |");	
-				}
-			}else{
-				System.out.println(" El numero ingresado esta por sobre las tablas a poder admitir la para la ");
-				System.out.println(" gestion del desarrollo ");
-			}
-		
+		System.out.print("   Por favor inngrese una vocal sin importar si esta es minuscula o mayuscula: "); vocal =tD.nextLine();
+		while (vocal) {
+			Object nextElement = en.nextElement();
+			
+		}
 		
 	}
+	
 }
-

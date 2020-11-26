@@ -1,14 +1,19 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Univerisidad Tecnologica de Honduras
+Catedratico     : Ing. Walter Suazo.
+Clase           : Programacion Orientada a Objetos.
+Alumno          : Axel Raul Carcamo G.
+Numero de cuenta: 201910060114
+
  */
+
 package Main;
 
-/**
- *
- * @author axelcarcamo
- */
+/*
+@author axelcarcamo
+*/
+
+
 import java.util.Scanner;
 public class EJ_02_DW {
 	public static void main(String[] args) {
@@ -46,7 +51,7 @@ public class EJ_02_DW {
 		System.out.println("    Ingrese un numero entero del cual usted desea obtener su tabla de multiplicacion         ");
 		System.out.println("    Este siendo del 1 al 12: "); rLL = tD.nextInt();	
 		}
-		while (rLL>12);
+		while (rLL>12 || rLL<0);
 		
 		for (int i = 1; i < 13; i++) {
 		v1 = i * rLL;
@@ -54,6 +59,4 @@ public class EJ_02_DW {
 		}
 		
 	}
-
-	
 }

@@ -13,14 +13,16 @@ package Main;
 @author axelcarcamo
 */
 
-import java.util.Scanner;
-
-public class EJ_DSC {
-	
-	public static void main (String[] args){
+// Arreglo de tamaño 50 con números aleatorios en el mismo rango, luego mostrar el mayor numero de todos*/
 
 
-	Scanner tD = new Scanner(System.in);
+package com.company;
+/*import java.util.Scanner;*/
+public class EJ_N_Aleatorios {
+
+    public static void main(String[] args) {
+        /*Scanner entrada = new Scanner(System.in);*/
+        
         /* Banner correspondiente a la univerisidad */
         System.out.println(" ===========================================================================================");
 	System.out.println(" ||                                                                                       ||");
@@ -42,39 +44,24 @@ public class EJ_DSC {
 	System.out.println(" ");
 	System.out.println("                                  Ejercicios de clase                                       ");
 	System.out.println(" ===========================================================================================");
-	
-	System.out.println("Cuantos productos comprara?");
-	int cantidadproducto = tD.nextInt();
 
-	if (cantidadproducto < 5)
-	{
-	System.out.println("Tiene un 0% de descuento en su compra");
-	}
-	
-	
+        int[]arreglo = new int[50];
+        int num = 0;
+        System.out.println("Los numeros aleatorios son:");
+        for(int i = 0; i < arreglo.length; i++) {
+            arreglo[i] = (int)(Math.random()*50+1);
+            System.out.print(arreglo[i] + ",");
+        }
+        int mayor = 0;
+        for(int i = 0; i < arreglo.length; i++) {
+            if(arreglo[i] > mayor) {
+                mayor = arreglo[i];
+            }
+        }
+        System.out.println();
+        System.out.println("El numero mayor del arreglo es: " + mayor);
 
-	if ((cantidadproducto > 2) && (cantidadproducto < 5));
-	{
-	System.out.println("Tiene un 5% de descuento en su compra");
-	}
-	
 
 
-	if (cantidadproducto > 5) 
-	{
-	System.out.println("¿Cual es el Subtotal de sus productos");
-	int Subtotal = tD.nextInt();
-	
-		if ((Subtotal > 300) && (Subtotal < 1000)); {
-		System.out.println("Tiene un 10% de descuento en su compra");
-		}
-
-		if (Subtotal > 1000){
-		System.out.println("Tiene un 20% de descuento en su compra");
-		}
-
-	}
-
-	
- }
+    }
 }

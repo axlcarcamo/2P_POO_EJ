@@ -1,16 +1,19 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Univerisidad Tecnologica de Honduras
+Catedratico     : Ing. Walter Suazo.
+Clase           : Programacion Orientada a Objetos.
+Alumno          : Axel Raul Carcamo G.
+Numero de cuenta: 201910060114
+
  */
+
 package Main;
 
-import java.util.Scanner;
+/*
+@author axelcarcamo
+*/
 
-/**
- *
- * @author axelcarcamo
- */
+
 public class EJ_02_W {
 	public static void main(String[] args) {
 
